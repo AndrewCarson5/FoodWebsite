@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carol's Foodies</title>
+    <title>Carol's Foodies - Taste of Uganda</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">Carol's Foodies</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#staff">Staff</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -19,52 +22,115 @@
     </header>
 
     <main>
-        <section id="home">
-            <h1>Welcome to Carol's Foodies</h1>
-            <p>Experience the taste of Uganda in every bite!</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Carol's Foodies</h1>
+                <p>Experience the Authentic Taste of Uganda</p>
+                <a href="#menu" class="cta-button">View Our Menu</a>
+            </div>
         </section>
 
         <section id="about">
-            <h2>About Us</h2>
-            <p>Carol's Foodies is a Ugandan-inspired restaurant bringing you the finest flavors from the Pearl of Africa. Our passion for food and hospitality ensures an unforgettable dining experience.</p>
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Carol's Foodies is a Ugandan-inspired restaurant bringing you the finest flavors from the Pearl of Africa. Our passion for food and hospitality ensures an unforgettable dining experience.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/api/placeholder/400/300" alt="Restaurant interior" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>Our Signature Dishes</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="/api/placeholder/300/200" alt="Ugali and Sukuma Wiki" />
+                        <h3>Ugali and Sukuma Wiki</h3>
+                        <p>Traditional cornmeal dish served with braised collard greens</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/api/placeholder/300/200" alt="Groundnut Soup" />
+                        <h3>Groundnut Soup</h3>
+                        <p>Rich and creamy peanut-based soup with vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="/api/placeholder/300/200" alt="Matoke" />
+                        <h3>Matoke</h3>
+                        <p>Steamed and mashed green bananas with a savory sauce</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="staff">
-            <h2>Our Staff</h2>
-            <ul>
-                <li>
-                    <h3>Namugwanya Grace</h3>
-                    <p>"I love creating dishes that bring smiles to our customers' faces."</p>
-                </li>
-                <li>
-                    <h3>Mukasa Daniel</h3>
-                    <p>"Our restaurant is like a family, and we treat our customers as part of it."</p>
-                </li>
-                <li>
-                    <h3>Nakalema Sarah</h3>
-                    <p>"The secret ingredient in all our dishes is love."</p>
-                </li>
-                <li>
-                    <h3>Kato Francis</h3>
-                    <p>"I'm proud to share our Ugandan culinary heritage with the world."</p>
-                </li>
-                <li>
-                    <h3>Nakimuli Joyce</h3>
-                    <p>"Every day at Carol's Foodies is a new adventure in taste."</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="staff-grid">
+                    <div class="staff-member">
+                        <img src="/api/placeholder/200/200" alt="Namugwanya" />
+                        <h3>Namugwanya Grace</h3>
+                        <p>"I love creating dishes that bring smiles to our customers' faces."</p>
+                    </div>
+                    <div class="staff-member">
+                        <img src="/api/placeholder/200/200" alt="Mukasa Daniel" />
+                        <h3>Mukasa Daniel</h3>
+                        <p>"Our restaurant is like a family, and we treat our customers as part of it."</p>
+                    </div>
+                    <div class="staff-member">
+                        <img src="/api/placeholder/200/200" alt="Nakalema Sarah" />
+                        <h3>Nakalema Sarah</h3>
+                        <p>"The secret ingredient in all our dishes is love."</p>
+                    </div>
+                    <div class="staff-member">
+                        <img src="/api/placeholder/200/200" alt="Kato Francis" />
+                        <h3>Kato Francis</h3>
+                        <p>"I'm proud to share our Ugandan culinary heritage with the world."</p>
+                    </div>
+                    <div class="staff-member">
+                        <img src="/api/placeholder/200/200" alt="Nakimuli Joyce" />
+                        <h3>Nakimuli Joyce</h3>
+                        <p>"Every day at Carol's Foodies is a new adventure in taste."</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Phone: +256 123 456 789</p>
-            <p>Email: info@carolsfoodies.com</p>
-            <p>Address: 123 Kampala Road, Kampala, Uganda</p>
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><strong>Phone:</strong> +256 123 456 789</p>
+                        <p><strong>Email:</strong> info@carolsfoodies.com</p>
+                        <p><strong>Address:</strong> 123 Kampala Road, Kampala, Uganda</p>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Carol's Foodies. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Carol's Foodies. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">IG</a>
+                <a href="#" class="social-icon">TW</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
